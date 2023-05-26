@@ -8,8 +8,9 @@
 }
 
 body {
-    background: #1f242d;
-    color: #fff;
+    color: #1f242d;
+    background: black;
+    
 }
 
 .header {
@@ -32,7 +33,7 @@ body {
 
 .logo {
     font-size: 25px;
-    color: #0ef;
+    color: #fff;
     text-decoration: none;
     cursor: default;
     opacity: 0;
@@ -53,16 +54,18 @@ body {
     }
 }
 
-.navbar a {
+.navbar b {
     display: inline-block;
     font-size: 18px;
     font-weight: 500;
     text-decoration: none;
-    color: #fff;
+    color: #570D63;
     transition: .3s;
     opacity: 0;
     animation: slideTop .2s ease forwards;
     animation-delay: calc(.2s * var(--i));
+
+    cursor: pointer;
 }
 
 /* KEYFRAMES ANIMATION FOR NAVBAR PAGES */
@@ -78,9 +81,9 @@ body {
     }
 }
 
-.navbar a:hover,
-.navbar a.active {
-    color: #0ef;
+
+.navbar b:focus {
+    zoom: 105%;
 }
 
 .header a {
@@ -94,31 +97,59 @@ body {
     margin: 0 50px;
 }
 
-.mobile-menu {
-    display: none;
-    margin-right: 20px;
-}
-
-.mobile-menu button {
-    border: none;
-    color: #0ef;
-    font-size: large;
-    background: transparent;
-
-    animation: slideLeft 1s ease forwards;
-}
-
 .home-body {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 10px 70px;
 
     margin-top: 100px;
 
+    flex-direction: column;
+
+}
+
+.buttons {
+    display: flex;
+    gap: 30px;
+
+    margin-bottom: 30px;
+}
+
+.sub-home-body {
+    background: #fff;
+    gap: 20px;
+
+    display: flex;
+    justify-self: center;
+    padding: 2%;
+
+    align-items: center;
+
+    border-radius: 10px;
+}
+
+.home-body-wrapper {
+    background: #fff;
+    gap: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    padding: 2%;
+
+    align-items: center;
+
+    border-radius: 10px;
+
+    height: 120vh;
+}
+
+.body-text {
+    padding: 0 3% 0 0;
 }
 
 .home-content {
@@ -164,7 +195,7 @@ body {
 }
 
 .home-content h3 span {
-    color: #0ef;
+    color: #570D63;
 }
 
 .home-content h1 {
@@ -228,9 +259,22 @@ body {
     }
 }
 
+.skills-header {
+    color: #570D63;
+    font-size: 900;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 30px;
+
+}
+
 .social-media {
     display: flex;
     gap: 15px;
+    
 }
 
 .social-media a {
@@ -238,11 +282,11 @@ body {
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid #0ef;
+    border: 2px solid #570D63;
     border-radius: 50%;
     align-items: center;
     justify-content: center;
-    color: #0ef;
+    color: #570D63;
     font-size: 25px;
     text-decoration: none;
     margin-bottom: 20px;
@@ -254,10 +298,25 @@ body {
 
 }
 
+
+.skills-nav{
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 0;
+}
+.content {
+    display: flex;
+    gap: 20px;
+
+    justify-content: center;
+    align-content: center;
+}
+
 .social-media a:hover {
-    background: #0ef;
-    color: #1f242d;
-    box-shadow: 0 0 20px #0ef;
+    background: #570D63;
+    color: #fff;
+    box-shadow: 0 0 20px #570D63;
 }
 
 @keyframes slideLeft {
@@ -279,11 +338,11 @@ body {
     border-radius: 15px;
     border: none;
 
-    background: #0ef;
-    color: #1f242d;
+    background: #570D63;
+    color: #fff;
 
     font-weight: 700;
-    box-shadow: 0 0 20px #0ef;
+    box-shadow: 0 0 5px #570D63;
 
     transition: .5s ease-in-out;
 
@@ -291,6 +350,16 @@ body {
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: 2s;
+}
+.download-btn:hover {
+    background: white;
+    color: black
+}
+
+.footer {
+    color: black;
+    margin-top: 70%;
+
 }
 
 
@@ -342,4 +411,48 @@ body {
     .logo {
         margin-left: 20px;
     }
+}
+
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+
+.content-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 800px;
+    
+    text-align: center;
+}
+
+#frontend, #backend {
+    transform: translate(0px);
+}
+
+/* #frontend {
+    left: 32%;
+
+} */
+
+/* #backend, #brand {
+    left: -10%;
+} */
+
+.indicator {
+    width: 70px;
+    border: none;
+    background: #570D63;
+    height: 3px;
+    margin: 2px 0;
+    transform: translateX(100px);
+    transition: transform 1s;
 }
