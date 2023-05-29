@@ -4,7 +4,6 @@ const typed = new Typed(".multiple-texts", {
     "Frontend Developer",
     "Brand Identity Designer",
     "UI/UX Designer",
-    "Cinematographer",
   ],
   typeSpeed: 50,
   backSpeed: 100,

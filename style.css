@@ -42,6 +42,18 @@ body {
     animation: slideRight 1s ease forwards;
     margin-left: 50px;
 }
+.box{
+    margin: 70px 150px;
+    width: 80%;
+    height: 45vh;
+    border: 5px solid rgb(253, 253, 253);
+    box-shadow: 0 3px 16px rgba(0,0,0,0.12);
+    background-position: center;
+    border-radius: 20px;
+    padding: 100px;
+    justify-content: center;
+    align-items: center;
+}
 
 /* KEYFRAMES ANIMATION */
 @keyframes slideRight {
@@ -388,20 +400,6 @@ body {
         margin-top: 25%;
     }
 
-    #backend, #brand {
-        margin-top: 30%;
-        width: 90%;
-    }
-    
-    #design, #grapher {
-        margin-top: 80%;
-        width: 90%;
-    }
-
-    #frontend {
-        margin-top: 50%;
-        width: 90%;
-    }
 
     .buttons {
         justify-content: center;
@@ -517,38 +515,41 @@ body {
 
 
 @media (max-width: 1025px) {
-    /* .content-wrapper {
-        width: 600px;
-        margin-top: 10px;
-    } */
+    .box{
+        margin: 70px 30px;
+        width: 80%;
+        /* display: flex;
+        flex-direction: column-reverse; */
+        border: 5px solid rgb(253, 253, 253);
+        box-shadow: 0 3px 16px rgba(0,0,0,0.12);
+        /* background-position: center; */
+        border-radius: 20px;
+        padding: 0 20px;
+        justify-content: center;
+        align-items: center;
+    }
 
     .content-text {
         width: 70%;
     }
 
-    #backend, #brand, #design, #grapher {
-        margin-top: 15%;
-    }
+    
+}
+@media (max-width:375px){
+    .box{
+        margin: 70px 30px;
+        width: 80%;
+        height: 35vh;
 
-    #frontend {
-        margin-top: 25%;
-    }
-
-    .footer {
-       margin: 50% 0 10% 0; 
-    }
-
-    .skills-nav {
-        font-size: 1rem;
-        text-align: center;
-    }
-
-    .indicator {
-        width: 30px;
-        transform: translate(0px);
-    }
-
-    .navbar {
-        gap: 70px;
+        /* display: flex;
+        flex-direction: column-reverse; */
+        border: 5px solid rgb(253, 253, 253);
+        box-shadow: 0 3px 16px rgba(0,0,0,0.12);
+        /* background-position: center; */
+        border-radius: 20px;
+        padding: 0 20px;
+        justify-content: center;
+        align-items: center;
     }
 }
+
