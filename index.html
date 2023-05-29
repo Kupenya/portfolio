@@ -8,78 +8,76 @@
     <link rel="stylesheet" href="style.css">
     <title>Glory Alphonsus</title>
 </head>
-<body>
+<body style="padding: 30px;">
     <div class="header">
         <a href="#" class="logo">Kupenya=>{}</a>
 
     </div>
 
-    <section class="home-body">
+    <section class="home-body-wrapper">
+        <div class="sub-home-body">
+            <div class="home-content">
+                <h3>
+                    Hello, I'm
+                </h3>
+                <h1>
+                    Glory Alphonsus
+                </h1>
+                <h3>
+                    And I'm a <span class="multiple-texts"> </span>
+                </h3>
 
-        <div class="home-body-wrapper">
-            <div class="sub-home-body">
-                <div class="home-content">
-                    <h3>
-                        Hello, I'm
-                    </h3>
-                    <h1>
-                        Glory Alphonsus
-                    </h1>
-                    <h3>
-                        And I'm a <span class="multiple-texts"> </span>
-                    </h3>
-    
-                    <div class="social-media">
-                        <a href="https://www.instagram.com/kupenya_/" style="--i:6;"><i class='bx bxl-instagram'></i></a>
-                        <a href="https://twitter.com/satyisa" style="--i:7;"><i class='bx bxl-twitter' ></i></a>
-                        <a href="https://www.linkedin.com/in/glory-alphonsus-313252159/" style="--i:8;"><i class='bx bxl-linkedin' ></i></a>
-                        <a href="https://github.com/kupenya" style="--i:9;"><i class='bx bxl-github' ></i></a>
-                    </div>
-    
-                    <p class="body-text">
-                        I'm a skilled fullstack developer experienced in building complex web applications from scratch using JavaScript (MERN Stack), Python (Django), and PHP (Laravel). I have a proven track record of quickly adapting to new technologies and delivering top-notch results. Whether working with teams or solo, I take pride in my communication, collaboration skills, and passion for problem-solving and innovation.
-                    </p>
-    
-                    <div class="buttons">
-                        <button class="download-btn" id="downloadButton">
-                            Download CV
-                        </button>
-                        <button class="download-btn" id="downloadWorks">
-                            View My Works
-                        </button>
-                    </div>
-                    
+                <div class="social-media">
+                    <a href="https://www.instagram.com/kupenya_/" style="--i:6;"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://twitter.com/satyisa" style="--i:7;"><i class='bx bxl-twitter' ></i></a>
+                    <a href="https://www.linkedin.com/in/glory-alphonsus-313252159/" style="--i:8;"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://github.com/kupenya" style="--i:9;"><i class='bx bxl-github' ></i></a>
                 </div>
-        
-                <div class="home-img">
-                    <img src="./images/Group 873.png" alt="">
+
+                <p class="body-text">
+                    I'm a skilled fullstack developer experienced in building complex web applications from scratch using JavaScript (MERN Stack), Python (Django), and PHP (Laravel). I have a proven track record of quickly adapting to new technologies and delivering top-notch results. Whether working with teams or solo, I take pride in my communication, collaboration skills, and passion for problem-solving and innovation.
+                </p>
+
+                <div class="buttons">
+                    <button class="download-btn" id="downloadButton">
+                        Download CV
+                    </button>
+                    <button class="download-btn" id="downloadWorks">
+                        View My Works
+                    </button>
                 </div>
+                
             </div>
-
-            <div class="">
-
+    
+            <div class="home-img">
+                <img src="./images/Group 873.png" alt="">
             </div>
+        </div>
 
-            <div class="my-skills">
+
+        <div class="my-skills">
+            <div style="display: flex; flex-direction: column; gap: 10px; justify-content: center;">
+
                 <h1 class="skills-header">
                     My Skills 
                 </h1>
-
-                <div class="skills-nav">
-                    <nav class="navbar">
-                        <b id="n-1" onclick="frntEnd()">FrontEnd Dev </b>
-                        <b id="n-2" onclick="bckEnd()"> BackEnd Dev</b>
-                        <b id="n-3" onclick="brnd()">Brand ID Designer</b>
-                        <b id="n-4">UI/UX Designer</b>
-                        <b id="n-5">Cinematographer</b>
-                    </nav>
-                </div>
-                <hr class="indicator">
-
-
-                <div class="content">
-                    <div class="content-wrapper">
-                        <!-- <p class="frontend content-text" id="frontend">
+                
+                <div style="display: flex; flex-direction: column; gap: 100px;">
+                    <div class="nav-wrap">
+                        <div class="skills-nav">
+                            <nav class="navbar">
+                                <b id="n-1" onclick="frntEnd()">FrontEnd Dev </b>
+                                <b id="n-2" onclick="bckEnd()"> BackEnd Dev</b>
+                                <b id="n-3" onclick="brnd()">Brand ID Designer</b>
+                                <b id="n-4" onclick="dsgnr()">UI/UX Designer</b>
+                                <b id="n-5" onclick="cin()">Cinematographer</b>
+                            </nav>
+                        </div>
+                        <hr class="indicator">
+                    </div>
+    
+                    <div class="content-wrapper" style="width: 75%;"">
+                        <p class="frontend content-text" id="frontend">
                             I have extensive proficiency in HTML5, CSS, and JavaScript, and I am well-versed in the art of frontend development. <br> 
                             I excel at creating visually captivating and user-friendly interfaces that leave a lasting impression. <br> 
                             My expertise lies in crafting websites that seamlessly adapt to different screen sizes and devices, <br> 
@@ -91,29 +89,45 @@
                         </p>
     
                         <p class="backend content-text" id="backend">
-                            Proficient in PHP (Laravel), Python (Django), and Node.js, I specialize in backend development. With expertise in database management, including MongoDB and SQL, I can efficiently design and optimize database structures. My experience extends to building robust RESTful APIs and implementing GraphQL for flexible data querying. <br><br>I am passionate about crafting scalable and secure backend solutions, ensuring seamless integration between the frontend and backend components. Leveraging my skills, I strive to create efficient and high-performing web applications.
+                            Proficient in PHP (Laravel), Python (Django), and Node.js, I specialize in backend development. With expertise <br> 
+                            in database management, including MongoDB and SQL, I can efficiently design and optimize database structures. <br> 
+                            My experience extends to building robust RESTful APIs and implementing GraphQL for flexible data querying. <br>
+                            <br>I am passionate about crafting scalable and secure backend solutions, ensuring seamless integration between <br> 
+                            the frontend and backend components. Leveraging my skills, I strive to create efficient and high-performing web applications.
                         </p>
                         
                         <p class="ui/ux content-text" id="brand">
-                            When it comes to UI/UX design, I am skilled in utilizing Figma and FigJam to bring creative visions to life. With a keen eye for aesthetics and user-centric design, I specialize in crafting intuitive and visually appealing interfaces. I am experienced in creating wireframes, interactive prototypes, and user flows, ensuring seamless and engaging user experiences. Through iterative design processes and user feedback, I continuously refine and optimize designs to meet user needs and business objectives. I am passionate about creating delightful and meaningful interactions that leave a lasting impression.
+                            When it comes to UI/UX design, I am skilled in utilizing Figma and FigJam to bring creative visions to life. With a keen eye for <br> 
+                            aesthetics and user-centric design, I specialize in crafting intuitive and visually appealing interfaces. I am experienced in <br> 
+                            creating wireframes, interactive prototypes, and user flows, ensuring seamless and engaging user experiences. Through iterative <br> 
+                            design processes and user feedback, I continuously refine and optimize designs to meet user needs and business objectives. <br> 
+                            I am passionate about creating delightful and meaningful interactions that leave a lasting impression.
                         </p> 
-                        <p class="brand content-text" id="brand">
-                            As a brand identity designer, I excel in creating impactful visual identities using Adobe Illustrator. With a keen understanding of branding principles, I craft unique and memorable logos, typography, and visual elements that reflect the essence of a brand. I have a keen eye for composition, color theory, and typography, allowing me to create cohesive and visually appealing brand assets. Through careful research and collaboration, I develop brand guidelines and style guides that ensure consistency across various touchpoints. I am passionate about helping businesses establish a strong and authentic brand presence through thoughtful and well-executed design.
+    
+                        <p class="brand content-text" id="design">
+                            As a brand identity designer, I excel in creating impactful visual identities using Adobe Illustrator. With a keen understanding <br> 
+                            of branding principles, I craft unique and memorable logos, typography, and visual elements that reflect the essence of a brand. <br> 
+                            I have a keen eye for composition, color theory, and typography, allowing me to create cohesive and visually appealing brand assets. <br> 
+                            Through careful research and collaboration, I develop brand guidelines and style guides that ensure consistency across various touchpoints. <br>
+                            I am passionate about helping businesses establish a strong and authentic brand presence through thoughtful and well-executed design.
                         </p>
-                        <p class="cinematographer content-text" id="brand">
-                            As a cinematographer, I am well-versed in the art of visual storytelling using tools such as Adobe Premiere Pro, CapCut, and InShot. I have a deep understanding of shot composition, lighting techniques, and camera movements to create captivating and immersive cinematic experiences. With a keen eye for detail and a strong sense of timing, I bring scenes to life through seamless editing, color grading, and visual effects. I am passionate about evoking emotions and capturing the essence of a story through dynamic visuals and engaging sequences. I continuously push creative boundaries to deliver high-quality cinematography that leaves a lasting impact on viewers.
-                    </div> -->
-                    <div class="footer">
-                        Glory Alphonsus | All rights reserved
+    
+                        <p class="cinematographer content-text" id="grapher">
+                            As a cinematographer, I am well-versed in the art of visual storytelling using tools such as Adobe Premiere Pro, CapCut, and InShot. <br> 
+                            I have a deep understanding of shot composition, lighting techniques, and camera movements to create captivating and immersive cinematic experiences. <br>
+                            With a keen eye for detail and a strong sense of timing, I bring scenes to life through seamless editing, color grading, and visual effects. <br> 
+                            I am passionate about evoking emotions and capturing the essence of a story through dynamic visuals and engaging sequences. <br> 
+                            <br>
+                            I continuously push creative boundaries to deliver high-quality cinematography that leaves a lasting impact on viewers.
                     </div>
                 </div>
+
+                <div class="footer">
+                    Glory Alphonsus | All rights reserved
+                </div>
             </div>
-        </div>
-        
 
-
-        
-    </section>
+        </section>
 
     <section>
 

@@ -21,6 +21,8 @@ body {
     padding: 20px;
     z-index: 100;
 
+    margin-bottom: 200px;
+
     display: flex;
     flex-direction: row;
 
@@ -55,7 +57,7 @@ body {
 }
 
 .navbar b {
-    display: inline-block;
+    display: flex;
     font-size: 18px;
     font-weight: 500;
     text-decoration: none;
@@ -97,20 +99,6 @@ body {
     margin: 0 50px;
 }
 
-.home-body {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 70px;
-
-    margin-top: 100px;
-
-    flex-direction: column;
-
-}
 
 .buttons {
     display: flex;
@@ -120,7 +108,6 @@ body {
 }
 
 .sub-home-body {
-    background: #fff;
     gap: 20px;
 
     display: flex;
@@ -139,13 +126,15 @@ body {
     display: flex;
     flex-direction: column;
     justify-self: center;
-    padding: 2%;
+    padding: 5%;
 
     align-items: center;
 
     border-radius: 10px;
 
-    height: 120vh;
+    height: fit-content;
+
+    margin: 5%;
 }
 
 .body-text {
@@ -154,6 +143,7 @@ body {
 
 .home-content {
     max-width: 900px;
+    padding: 10px 0;
 }
 
 .home-content h3 {
@@ -302,9 +292,11 @@ body {
 .skills-nav{
     display: flex;
     justify-content: center;
+    gap: 10px;
 
     margin-bottom: 0;
 }
+
 .content {
     display: flex;
     gap: 20px;
@@ -358,50 +350,96 @@ body {
 
 .footer {
     color: black;
-    margin-top: 70%;
+    margin: 20% 0;
 
+    align-self: center;
 }
 
 
 
 @media (max-width: 768px) {
-    .home-body {
+    .sub-home-body {
         flex-direction: column;
         align-items: center;
         text-align: center;
         gap: 30px;
+        padding: 5px 0;
     }
 
     .social-media {
         align-items: center;
         justify-content: center;
+    }
 
+    #n-1, #n-2, #n-3, #n-4, #n-5 {
+        width: auto;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .home-content {
+        padding: 0;
+        margin-top: 150px;
+    }
+
+    .content-text {
+        width: auto;
+        padding: 0 10%;
+        margin-top: 25%;
+    }
+
+    #backend, #brand {
+        margin-top: 30%;
+        width: 90%;
+    }
+    
+    #design, #grapher {
+        margin-top: 80%;
+        width: 90%;
+    }
+
+    #frontend {
+        margin-top: 50%;
+        width: 90%;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .footer {
+        margin-top: 38%;
+        padding: 80px 0;
+        align-self: center;
+    }
+
+    .indicator {
+        transform: translate(10px);
+        width: 50px;
+    }
+
+    .content-text {
+        text-align: left;
+    }
+
+    .navbar b {
+        font-size: 14px;
+    }
+
+    .nav-wrap {
+        margin-bottom: 5%;
+        width: 80%;
+        align-self: center;
     }
 }
 
 @media (max-width: 660px) {
-    .mobile-menu {
-        display: block;
-    }
-
-    .navbar {
-        display: none;
-    }
-
     .active {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-
-    /* .display {
-        display: flex;
-    }
-
-    .close {
-        display: none;
-    } */
 
     .home-img img {
         height: 300px;
@@ -418,9 +456,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 70px;
+    /* margin-top: 100px; */
+
+    overflow: hidden;
 }
 
+.content {
+    height: 10px;
+}
 
 .content-text {
     position: absolute;
@@ -429,13 +472,27 @@ body {
     margin-left: auto;
     margin-right: auto;
 
-    width: 800px;
+    width: fit-content;
     
     text-align: center;
+
+    overflow: hidden;
 }
 
-#frontend, #backend {
+#frontend, #backend, #brand, #design, #grapher {
     transform: translate(0px);
+}
+
+#frontend {
+    margin-top: 50px;
+}
+
+#backend, #brand, #design, #grapher {
+    display: none;
+}
+
+#grapher {
+    width: 80%;
 }
 
 /* #frontend {
@@ -448,11 +505,50 @@ body {
 } */
 
 .indicator {
-    width: 70px;
+    width: 100px;
     border: none;
+    border-radius: 50%;
     background: #570D63;
     height: 3px;
-    margin: 2px 0;
-    transform: translateX(100px);
+    margin: 0 !important; 
+    transform: translateX(60px);
     transition: transform 1s;
+}
+
+
+@media (max-width: 1025px) {
+    /* .content-wrapper {
+        width: 600px;
+        margin-top: 10px;
+    } */
+
+    .content-text {
+        width: 70%;
+    }
+
+    #backend, #brand, #design, #grapher {
+        margin-top: 15%;
+    }
+
+    #frontend {
+        margin-top: 25%;
+    }
+
+    .footer {
+       margin: 50% 0 10% 0; 
+    }
+
+    .skills-nav {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .indicator {
+        width: 30px;
+        transform: translate(0px);
+    }
+
+    .navbar {
+        gap: 70px;
+    }
 }
