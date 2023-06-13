@@ -132,6 +132,7 @@ body {
 }
 
 .home-body-wrapper {
+    
     background: #fff;
     gap: 20px;
 
@@ -151,6 +152,7 @@ body {
 
 .body-text {
     padding: 0 3% 0 0;
+    
 }
 
 .home-content {
@@ -518,6 +520,7 @@ body {
     .box{
         margin: 70px 30px;
         width: 80%;
+        
         /* display: flex;
         flex-direction: column-reverse; */
         border: 5px solid rgb(253, 253, 253);
@@ -539,17 +542,24 @@ body {
     .box{
         margin: 70px 30px;
         width: 80%;
-        height: 35vh;
-
-        /* display: flex;
-        flex-direction: column-reverse; */
+        height: 55%;
         border: 5px solid rgb(253, 253, 253);
         box-shadow: 0 3px 16px rgba(0,0,0,0.12);
-        /* background-position: center; */
         border-radius: 20px;
         padding: 0 20px;
         justify-content: center;
         align-items: center;
+        text-justify: auto;
+    }
+    .home-body-wrapper{
+        margin: 0 auto;
+    }
+    .body-text{
+        margin: 0 auto;
+        padding: 0 12%;
+        text-align: center;
+        justify-content: center;
+       
     }
 }
 
