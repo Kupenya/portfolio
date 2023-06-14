@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .project {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Adjust the value as per your preference */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  .project h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .project p {
+    color: #777;
+  }
+  
+  .project a {
+    text-decoration: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    background: #570D63;
+    color: #fff;
+    font-weight: 300;
+    box-shadow: 0 0 2px #570D63;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.project a:hover{
+    background: #fff;
+    color: #570D63;
+}
