@@ -593,6 +593,24 @@ a {
     }
 }
 
+
+
+@media (max-width: 940px) {
+    .home-content {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .social-media,
+    .buttons {
+        justify-content: center;
+    }
+
+    .sub-home-body {
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 320px) {
     .download-btn {
       width: 100%;
