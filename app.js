@@ -13,7 +13,7 @@ const typed = new Typed(".multiple-texts", {
 
 const downloadButton = document.getElementById("downloadButton");
 downloadButton.addEventListener("click", function () {
-  const cvFileUrl ='files/Glory cv.pdf';
+  const cvFileUrl ='files/Glory.pdf';
   const fileName = "Glory_cv";
 
   
